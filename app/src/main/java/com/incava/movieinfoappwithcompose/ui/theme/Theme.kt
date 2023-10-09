@@ -19,7 +19,7 @@ private val LocalColors = staticCompositionLocalOf { ColorSet.Red.LightColorSche
 @Composable
 fun MovieInfoAPPWithComposeTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    myColors: ColorSet,
+    myColors: ColorSet = ColorSet.Red,
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = false,
     content: @Composable () -> Unit
