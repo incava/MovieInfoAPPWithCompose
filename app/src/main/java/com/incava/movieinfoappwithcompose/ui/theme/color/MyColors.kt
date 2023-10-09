@@ -2,7 +2,7 @@ package com.incava.movieinfoappwithcompose.ui.theme.color
 
 import androidx.compose.material3.ColorScheme
 import androidx.compose.ui.graphics.Color
-
+import com.incava.movieinfoappwithcompose.ui.models.dialog.DialogButton
 
 
 data class MyColors(

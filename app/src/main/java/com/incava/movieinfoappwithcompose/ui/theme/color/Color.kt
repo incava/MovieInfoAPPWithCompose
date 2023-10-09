@@ -25,6 +25,8 @@ val Purple700 = Color(0xFF635270)
 val Purple900 = Color(0xFF200833)
 val Green400 = Color(0xFF55D800)
 val Blue400 = Color(0xFF395DE8)
+val Blue600 = Color(0xFF4C5DE8)
+val Blue700 = Color(0xFF0039A6)
 val Grey200 = Color(0xFF908499)
 val Grey900 = Color(0xFF151515)
 val White = Color(0xFFFFFFFF)
@@ -38,9 +40,9 @@ sealed class ColorSet {
     object Red : ColorSet() {
         override var LightColorScheme = MyColors(
             material = lightColorScheme(
-                primary = Red700,
+                primary = Blue700,
                 primaryContainer = Red800,
-                secondary = Purple900,
+                secondary = Purple400,
                 secondaryContainer = Purple700,
                 surface = White,
                 onSurface = Black,
