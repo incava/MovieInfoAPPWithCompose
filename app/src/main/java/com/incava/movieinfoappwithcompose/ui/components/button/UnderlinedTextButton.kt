@@ -18,6 +18,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.incava.movieinfoappwithcompose.ui.theme.Paddings
+import com.incava.movieinfoappwithcompose.ui.theme.custumColorScheme
 
 @Composable
 fun UnderlinedTextButton(
@@ -30,12 +31,14 @@ fun UnderlinedTextButton(
         modifier = modifier.fillMaxWidth(),
         onClick = onClick,
         colors = ButtonDefaults.buttonColors(
-            containerColor = MaterialTheme.colorScheme.secondaryContainer,
-            contentColor = MaterialTheme.colorScheme.secondary,
+            containerColor = MaterialTheme.custumColorScheme.onSecondary,
+            contentColor = MaterialTheme.custumColorScheme.onSurface,
             disabledContainerColor = MaterialTheme.colorScheme.background,
-            disabledContentColor = MaterialTheme.colorScheme.secondary
+            disabledContentColor = MaterialTheme.custumColorScheme.onSurface,
         ),
-
+        elevation = ButtonDefaults.buttonElevation(
+            defaultElevation = 0.dp
+        )
     ) {
         Row(
             horizontalArrangement = Arrangement.Center,
